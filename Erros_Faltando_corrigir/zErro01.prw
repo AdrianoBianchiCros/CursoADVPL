@@ -37,7 +37,10 @@ User Function zErro01()
     cQry2 += "     A2_FILIAL = '" + FWxFilial('SA2') + "' " + CRLF
     cQry2 += "     AND A2_EST = 'SP' " + CRLF
     cQry2 += "     AND SA2.D_E_L_E_T_ = ' ' " + CRLF
-    TCQuery cQry2 New Alias "QRY_SA2"
+    TCQuery cQry2 New Alias "QRY_SA2B"
+     //Ajuste feito na linha 40 - O Alieas ja esta em uso no fonte igual a linha 28 chamando duas vezes 
+     /*Alias already in use: QRY_SA2  on U_ZERRO01(ZERRO01.PRW) 15/06/2026 21:44:31 line : 40*/
+    
 
     QRY_SA2->(DbCloseArea())
     QRY_SA2_SP->(DbCloseArea())
