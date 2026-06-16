@@ -29,6 +29,9 @@ User Function zErro02()
     //Mostrando o primeiro fornecedor encontrado
     Alert(QRY_SA->A2_NOME)
     QRY_SA2->(DbCloseArea())
+    /*Erro ocorre quando não encontra o elias que esta tentando manipular Alias esta QRY_SA2 mas esta
+    chamando o QRY_SA erro de digitação*/
+    /*Alias does not exist QRY_SA on U_ZERRO02(ZERRO02.PRW) 15/06/2026 21:00:17 line : 30*/
 
     RestArea(aArea)    
 Return
