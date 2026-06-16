@@ -27,7 +27,7 @@ User Function zErro02()
     TCQuery cQry New Alias "QRY_SA2"
 
     //Mostrando o primeiro fornecedor encontrado
-    Alert(QRY_SA->A2_NOME)
+    Alert(QRY_SA2->A2_NOME)
     QRY_SA2->(DbCloseArea())
     /*Erro ocorre quando não encontra o elias que esta tentando manipular Alias esta QRY_SA2 mas esta
     chamando o QRY_SA erro de digitação*/
