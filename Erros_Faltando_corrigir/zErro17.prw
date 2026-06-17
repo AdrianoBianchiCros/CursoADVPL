@@ -10,7 +10,7 @@ Simulando o erro stack depth overflow in function
 @version version
 @example u_zErro17()
 /*/
-
+//
 User Function zErro17()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
@@ -20,8 +20,10 @@ User Function zErro17()
 
     RestArea(aArea)
 Return
-
-Static Function fLooping(cNome)
-    nVez++
-    fLooping(cNome)
+//Função chamando dentro dele mais exoutando a memoria com diversas chamadas dela mesmo
+Static Function fLooping(cNome)//Ajustado para N vezes a chamada
+    If nVez <= 3
+        nVez++
+        fLooping(cNome)
+    EndIf
 Return
