@@ -15,7 +15,7 @@ User Function zErro27()
     Local aArea  := GetArea()
     Local cNome  := "Daniel"
     Local nVar   := 0
-    Local cNome  := ""
+    Local cNome  := "" //Variavel encontrada em outro local
     
     nVar++
     Alert(nVar)

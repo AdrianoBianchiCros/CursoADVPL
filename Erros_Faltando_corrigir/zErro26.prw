@@ -13,7 +13,7 @@ Simulando o erro Variable does not exist
 //Variavel nao localizado.
 User Function zErro26()
     Local aArea  := GetArea()
-    Local nVar := 0
+    Local nVar := 0 //Declarada a variavel nVar
 
     nVar++
     Alert(nVar)
