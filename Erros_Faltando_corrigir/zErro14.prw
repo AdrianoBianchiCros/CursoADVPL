@@ -13,7 +13,9 @@ Simulando o erro Local variable never used
 
 User Function zErro14()
     Local aArea := GetArea()
-    Local cNome := "Daniel"
+    Local cNome := "Daniel"//Variavel não esta sendo utilizada.
+
+    Alert(cNome)//Ajustado.
 
     RestArea(aArea)
 Return
