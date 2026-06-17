@@ -10,7 +10,7 @@ Simulando o erro Static Function never called
 @version version
 @example u_zErro20()
 /*/
-
+//Função nunca foi chamada. remover do fonte ou colocar no fonte
 User Function zErro20()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
@@ -20,6 +20,6 @@ User Function zErro20()
     RestArea(aArea)
 Return
 
-Static Function fMostrar(cNome)
+/*Static Function fMostrar(cNome)
     Alert(cNome)
-Return
+Return*/
