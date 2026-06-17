@@ -10,12 +10,13 @@ Simulando o erro Unsupported assign to function call
 @version version
 @example u_zErro25()
 /*/
-
+//Tenou atribuir um conteudo em alguma função
 User Function zErro25()
     Local aArea  := GetArea()
     Local cNome  := ""
     
-    Alert("Daniel") := cNome
+    cNome := "Daniel"
+    Alert("Daniel")
 
     RestArea(aArea)
 Return
