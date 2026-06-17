@@ -13,12 +13,12 @@ Simulando o erro Variable redefined
 
 User Function zErro27()
     Local aArea  := GetArea()
-    Local cNome  := "Daniel"
+    //Local cNome  := "Daniel"//Variavel encontrada em outro , removida a duplicidade de variavel
     Local nVar   := 0
-    Local cNome  := "" //Variavel encontrada em outro local
+    Local cNome  := "" 
     
     nVar++
-    Alert(nVar)
+    Alert(cNome + " " + nVar)
 
     RestArea(aArea)
 Return
