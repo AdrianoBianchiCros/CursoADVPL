@@ -10,8 +10,8 @@ Simulando o erro Duplicated Function
 @version version
 @example u_zErro05()
 /*/
-
-User Function zErro05()
+//Erro quando uma função com mesmo nome ja compilado zErro05(), somente para User Function
+User Function zErro06()
     Local aArea := GetArea()
 
     Alert('Teste')
