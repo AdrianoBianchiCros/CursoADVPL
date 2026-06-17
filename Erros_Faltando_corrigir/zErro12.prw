@@ -15,7 +15,9 @@ User Function zErro12()
     Local aArea := GetArea()
     Private oFont := TFont():New()
     
-    oFont:AtributoAAA := "Teste"
+    If Type("oFont:AtributoAAA")!= "U" 
+        oFont:AtributoAAA:= "Teste"//A Propriedade nao existe.
+    EndIf
 
     RestArea(aArea)    
 Return
