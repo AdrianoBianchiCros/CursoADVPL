@@ -1,5 +1,5 @@
 //Bibliotecas
-#Include "TOTVS-.ch"
+#Include "TOTVS.ch" //Tentando compilar a função com a include incorreta ou nome incorreto
 
 /*/{Protheus.doc} User Function zErro08
 Simulando o erro File not found ch
