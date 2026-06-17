@@ -14,8 +14,8 @@ Simulando o erro More parameters used in function call than expected
 User Function zErro16()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
-
-    fMostrar(cNome, "Atencao", "a")
+    //Mais parametros foi chamado oo que é mostrado
+    fMostrar(cNome, "Atencao")
 
     RestArea(aArea)
 Return
