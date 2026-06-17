@@ -13,7 +13,7 @@ Simulando o erro String size overflow
 
 User Function zErro21()
     Local aArea        := GetArea()
-    Private cMsg       := Space(500000000)
+    Private cMsg       := Space(5000)//Ultrapassou o tamnho padrão
     Private nVez       := 0
 
     Alert(cMsg)
