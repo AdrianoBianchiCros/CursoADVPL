@@ -13,9 +13,9 @@ Simulando o erro Index not found
 
 User Function zErro05()
     Local aArea := GetArea()
-    
+    //SA2010: SetOrder - Index not found
     DbSelectArea('SA2')
-    SA2->(DbSetOrder(37))
+    SA2->(DbSetOrder(3))//Tentando acessar um indice que não existe verificar na tebela o indice correto
     SA2->(DbGoTop())
 
     //Mostrando o nome do fornecedor
