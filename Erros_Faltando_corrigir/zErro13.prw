@@ -10,12 +10,12 @@ Simulando o erro Invalid typecast
 @version version
 @example u_zErro13()
 /*/
-
+//Quando a funação requer um tipo de variavel e estou enviando outro
 User Function zErro13()
     Local aArea := GetArea()
     Local lOk
 
-    For lOk := .T. To 10
+    For lOk := 1 To 10 //Erro logico com numerico.
         
     Next
 
