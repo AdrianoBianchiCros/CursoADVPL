@@ -15,7 +15,7 @@ User Function zErro11()
     Local aArea := GetArea()
     
     DbSelectArea('SB1')
-    Alert(SB1->B1_X_DOCF)
+    Alert(SB1->B1_X_DOCF)//invalid field name in Alias SB1->B1_X_DOCF, Verificar se o campo existe, criar o campo.
 
     RestArea(aArea)    
 Return
