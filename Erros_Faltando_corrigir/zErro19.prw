@@ -15,7 +15,7 @@ User Function zErro19()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
 
-    fMostrar(cNome
+    fMostrar(cNome)//Ajustado faltando finalizar a estrutura que foi aberta
     
     RestArea(aArea)
 Return
