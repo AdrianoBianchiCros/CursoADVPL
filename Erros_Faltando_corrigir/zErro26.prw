@@ -10,10 +10,11 @@ Simulando o erro Variable does not exist
 @version version
 @example u_zErro26()
 /*/
-
+//Variavel nao localizado.
 User Function zErro26()
     Local aArea  := GetArea()
-    
+    Local nVar := 0
+
     nVar++
     Alert(nVar)
 
