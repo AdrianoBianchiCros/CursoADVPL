@@ -21,8 +21,12 @@ User Function zErro04()
     aAdd(aDados, "Atilio")
     aAdd(aDados, "Terminal de Informacao")
 
-    //Mostrando o quarto elemento
-    Alert(aDados[nPosicao])
+    //Mostrando o quarto elemento, pode ser corrigido com um if para validar o tamnho do array
+    If nPosicao <= Len(aDados)//Tentando acessa um elemento com 4 posições mas so tem 3
+        Alert(aDados[nPosicao])
+    EndIf
 
     RestArea(aArea)    
 Return
+
+//array out of bounds [4] of [3] quando tento acessar um elemento do meu Array que não existe.
