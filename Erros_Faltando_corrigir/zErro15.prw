@@ -14,8 +14,8 @@ Simulando o erro Local declaration follows executable statement
 User Function zErro15()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
-    Private cSobreNome := "Atilio"
-    Local cNomeInt     := cNome + " " + cSobreNome
+    Local cSobreNome := "Atilio" //Ajustado a variavel para Local
+    Local cNomeInt     := cNome + " " + cSobreNome //Não pode ter variavel no meio da função
 
     Alert(cNomeInt)
 
