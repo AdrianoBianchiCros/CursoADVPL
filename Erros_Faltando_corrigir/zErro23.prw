@@ -17,7 +17,7 @@ User Function zErro23()
     
     cNome := "Daniel Atilio"
 
-    MsgInfo()
+    MsgInfo(cNome,"Atenção")//Requer pelo menos um parametro.
 
     RestArea(aArea)
 Return
