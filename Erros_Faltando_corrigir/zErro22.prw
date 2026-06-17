@@ -2,7 +2,7 @@
 #Include "TOTVS.ch"
 #Include "TopConn.ch"
 
-#Define STR_NOME "Daniel"
+//#Define STR_NOME "Daniel"
 
 /*/{Protheus.doc} User Function zErro22
 Simulando o erro Syntax Error
@@ -16,7 +16,7 @@ Simulando o erro Syntax Error
 User Function zErro22()
     Local aArea        := GetArea()
     
-    STR_NOME := "Daniel Atilio"
-
+    cNome := "Daniel Atilio" //Erro constante nao pode ser alterada
+    //Removida a contante e transformado em variavel
     RestArea(aArea)
 Return
