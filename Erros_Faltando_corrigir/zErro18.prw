@@ -10,14 +10,14 @@ Simulando o erro Statement unbalanced function in
 @version version
 @example u_zErro18()
 /*/
-
+//Erro sem finalização
 User Function zErro18()
     Local aArea        := GetArea()
     Local cNome        := "Daniel"
 
     fMostrar(cNome)
     RestArea(aArea)
-
+Return //Colocado o Return na estrutura
 Static Function fMostrar(cNome)
     Alert(cNome)
 Return
