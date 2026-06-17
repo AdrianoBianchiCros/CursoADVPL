@@ -17,7 +17,7 @@ User Function zErro07()
     
     If nValor > 20
         Alert(nValor)
-    EndDo
+    EndIf //Ajuste pois o correto é EndIf 
 
     RestArea(aArea)    
 Return
