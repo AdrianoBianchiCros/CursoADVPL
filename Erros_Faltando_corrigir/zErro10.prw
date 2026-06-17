@@ -10,7 +10,7 @@ Simulando o erro InterFunctionCall: cannot find function in AppMap
 @version version
 @example u_zErro10()
 /*/
-
+//Erro:NOFUNCCW - OPÇÃO NAO DISPONIVEL NO PROTHEUS, O FONTE NÃO FOI COMPILADO NO RPO
 User Function zErro10()
     Local aArea := GetArea()
     
