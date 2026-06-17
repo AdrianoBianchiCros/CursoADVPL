@@ -16,14 +16,18 @@ User Function zErro09()
     Local cQry  := ""
 
     //Selecionando todos os fornecedores
-    cQry := "SELECT"
-    cQry += "    A2_COD,"
-    cQry += "    A2_NOME"
-    cQry += "FROM"
-    cQry += "    " + RetSQLName('SA2') + " SA2"
-    cQry += "WHERE"
-    cQry += "    A2_FILIAL = '" + FWxFilial('SA2') + "'"
-    cQry += "    AND SA2.D_E_L_E_T_ = ' '"
+    /*Erro de operação com SQL, colete a log de erro, localize a varivale sql neste caso cQry e veja a query
+    pode estar com erro, neste caso falta quebra de linha
+    SELECT    A2_COD,    A2_NOMEFROM    SA2010 SA2WHERE <-Erro Aqui   A2_FILIAL = '  '    AND SA2.D_E_L_E_T_ = ' '
+    Colocado o + CRLF no final para quebrar a linha*/
+    cQry := "SELECT" + CRLF
+    cQry += "    A2_COD,"+ CRLF
+    cQry += "    A2_NOME"+ CRLF
+    cQry += "FROM"+ CRLF
+    cQry += "    " + RetSQLName('SA2') + " SA2"+ CRLF
+    cQry += "WHERE"+ CRLF
+    cQry += "    A2_FILIAL = '" + FWxFilial('SA2') + "'"+ CRLF
+    cQry += "    AND SA2.D_E_L_E_T_ = ' '"+ CRLF
     TCQuery cQry New Alias "QRY_SA2"
 
     //Se houver dados, mostra a mensagem
